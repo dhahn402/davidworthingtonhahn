@@ -154,8 +154,37 @@
     <div class="wrap">
       <div style="font-family:var(--fraunces);font-style:italic;color:var(--gold-2);font-size:1.05rem;max-width:40ch;margin:0 auto 1.1rem;line-height:1.6">"For where your treasure is, there your heart will be also." — Matthew 6:21</div>
       David Worthington Hahn · New Bern, NC · <a href="https://hahntechcorp.com">Hahn Technologies Corp</a>
+      <div style="font-size:.68rem;color:var(--muted);margin-top:.6rem;opacity:.8">Theme music: &ldquo;Hitman&rdquo; by Kevin MacLeod (incompetech.com) · licensed under Creative Commons: By Attribution 4.0</div>
       <div class="sdg">Soli Deo Gloria ✝️</div>
     </div>
   </footer>
+
+  <!-- Theme player — "No fate but what we make" (legal, CC-BY) -->
+  <style>
+    .theme-player{position:fixed;left:16px;bottom:16px;z-index:60;display:flex;align-items:center;gap:11px;background:rgba(34,29,23,.94);backdrop-filter:blur(8px);border:1px solid var(--line-s);border-radius:999px;padding:8px 17px 8px 8px;box-shadow:0 12px 32px rgba(0,0,0,.55)}
+    .theme-player button{width:40px;height:40px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#211603;font-size:15px;display:flex;align-items:center;justify-content:center;flex:none;line-height:1}
+    .theme-player button:hover{filter:brightness(1.06)}
+    .tp-title{font-family:var(--inter);font-weight:700;font-size:.82rem;color:var(--ink);letter-spacing:.01em}
+    .tp-sub{font-size:.62rem;color:var(--muted);letter-spacing:.03em;margin-top:1px}
+    @media(max-width:520px){.tp-sub{display:none}.theme-player{padding:7px 14px 7px 7px}}
+  </style>
+  <div class="theme-player" aria-label="Site theme music">
+    <button id="themeBtn" aria-label="Play theme music" title="Play / pause">▶</button>
+    <div>
+      <div class="tp-title" id="tpTitle">▶ Play my theme</div>
+      <div class="tp-sub">Judgment Day · &ldquo;Hitman&rdquo; — Kevin MacLeod · CC BY</div>
+    </div>
+    <audio id="themeAudio" src="theme.mp3" preload="none" loop></audio>
+  </div>
+  <script>
+  (function(){
+    var a=document.getElementById('themeAudio'),b=document.getElementById('themeBtn'),t=document.getElementById('tpTitle');
+    if(!a||!b)return;
+    b.addEventListener('click',function(){
+      if(a.paused){a.play().then(function(){b.textContent='❚❚';t.textContent='Now playing…';}).catch(function(){t.textContent='Tap again ▶';});}
+      else{a.pause();b.textContent='▶';t.textContent='▶ Play my theme';}
+    });
+  })();
+  </script>
 </body>
 </html>
