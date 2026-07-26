@@ -92,7 +92,7 @@
     <div class="wrap prose">
       <div class="sec-head"><span class="eyebrow">Who I Am</span></div>
       <p>I'm not the man I used to be — and that's the whole point. Addiction and prison took years from me; a coma nearly took the rest. But by a grace I didn't earn, I made it home. I learned to read after I was baptized, earned my first A's in a cell, and walked out to a friend waiting at the gate. I never forget the lean years — oatmeal is better than no meal, and plenty of days that was the meal.</p>
-      <p>Today I build — a whole family of companies out of New Bern — but not to chase money. I build so I have something to <em>give</em>. Every venture is a way to serve: clean water for the homeless because I've been homeless, honest work for the written-off because I was one of them, and a hand for children a world away in Pakistan.</p>
+      <p>Today I build — a whole family of companies out of New Bern — but not to chase money. I build so I have something to <em>give</em>. Every venture is a way to turn a second chance into second chances for other people. Keep reading and I'll show you what that looks like.</p>
       <p class="pull">"If God can restore a man like me, He can restore anyone. That's not marketing. That's my life."</p>
       <p style="text-align:center"><a href="https://hahntechcorp.com/founder/">Read the full testimony →</a> &nbsp;·&nbsp; <a href="https://hahntechcorp.com/story/">Where I come from →</a></p>
     </div>
@@ -169,6 +169,22 @@
       <div class="sdg">Soli Deo Gloria ✝️</div>
     </div>
   </footer>
+
+  <!-- Sticky contact pill — free bottom-right corner (audio player sits bottom-left) -->
+  <style>
+    .contact-pill{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;align-items:center;gap:8px;background:rgba(34,29,23,.94);backdrop-filter:blur(8px);border:1px solid var(--line-s);border-radius:999px;padding:7px 8px 7px 16px;box-shadow:0 12px 32px rgba(0,0,0,.55)}
+    .contact-pill .cp-label{font-family:var(--inter);font-weight:700;font-size:.82rem;color:var(--ink);letter-spacing:.01em}
+    .contact-pill a{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:40px;border-radius:999px;font-family:var(--inter);font-weight:700;font-size:.9rem;transition:filter .15s}
+    .contact-pill a.cp-text{padding:0 16px;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#211603}
+    .contact-pill a.cp-call{width:40px;background:#2b241c;border:1px solid var(--line-s);color:var(--ink);font-size:1.05rem}
+    .contact-pill a:hover{filter:brightness(1.07)}
+    @media(max-width:560px){.contact-pill .cp-label{display:none}.contact-pill{padding:7px 8px 7px 8px}}
+  </style>
+  <div class="contact-pill" aria-label="Contact David">
+    <span class="cp-label">David:</span>
+    <a class="cp-text" href="sms:2526266236">💬 Text</a>
+    <a class="cp-call" href="tel:2526266236" aria-label="Call David">📞</a>
+  </div>
 
   <!-- Theme player — "No fate but what we make" (legal, CC-BY) -->
   <style>
