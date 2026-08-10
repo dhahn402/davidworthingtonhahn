@@ -45,7 +45,18 @@
     background:radial-gradient(65% 65% at 50% 0%,rgba(203,164,90,.16),transparent 62%),linear-gradient(180deg,var(--bg2),var(--bg))}
   /* crest.svg is a transparent vector, so it needs no edge feathering — the old mask
      existed only to dissolve the JPG's cool #0c0c0e backdrop, and would clip the leaves. */
-  header .crest{display:block;width:min(300px,62vw);height:auto;margin:0 auto 1.9rem}
+  /* The ornate crest art sits on a cool #0c0c0e backdrop while the page is warm
+     #14110e, so the raw image reads as a grey rectangle. Feather all four edges
+     to dissolve it. (Restored 2026-08-10 when David chose the original crest
+     again — this mask is REQUIRED for the JPG and must NOT be removed while
+     crest.jpg is the hero.) */
+  header .crest{display:block;width:min(300px,62vw);height:auto;margin:0 auto 1.9rem;
+    -webkit-mask-image:linear-gradient(to right,transparent 0,#000 5%,#000 95%,transparent 100%),
+                       linear-gradient(to bottom,transparent 0,#000 4%,#000 96%,transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-image:linear-gradient(to right,transparent 0,#000 5%,#000 95%,transparent 100%),
+               linear-gradient(to bottom,transparent 0,#000 4%,#000 96%,transparent 100%);
+    mask-composite:intersect}
   @media (max-width:520px){header .crest{width:min(230px,58vw);margin-bottom:1.5rem}}
   header .eyebrow{display:block;margin-bottom:1.1rem}
   header h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:700;letter-spacing:-.01em}
@@ -118,8 +129,11 @@
 <body>
   <header class="hero">
     <div class="wrap">
-      <img class="crest" src="crest.svg" width="400" height="500" fetchpriority="high" decoding="async"
-           alt="The Worthington–Hahn crest: a gold rooster above a silver-edged shield bearing a gold cross and an oak tree, with the letters W and H at either side and leaves drifting down, beneath the motto Wisdom, Faith, Innovation." />
+      <picture>
+        <source srcset="crest.webp" type="image/webp" />
+        <img class="crest" src="crest.jpg" width="900" height="1019" fetchpriority="high" decoding="async"
+             alt="The Worthington–Hahn family crest: a black rooster above a shield bearing a cross, an oak tree and two chalices, flanked by two crowned lions carrying the letters W and H, beneath the motto Wisdom, Faith, Innovation." />
+      </picture>
       <span class="eyebrow">New Bern, North Carolina</span>
       <h1>David Worthington Hahn</h1>
       <div class="tag">A servant of the Most High — one honest day at a time.</div>
