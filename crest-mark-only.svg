@@ -1,0 +1,78 @@
+<svg viewBox="0 0 400 448" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="whmTitle whmDesc">
+ <title id="whmTitle">The Worthington–Hahn crest (mark only, no motto)</title>
+ <desc id="whmDesc">A gold rooster above a silver-edged shield bearing a gold cross and an oak tree,
+ with the letters W and H at either side and leaves drifting down, beneath the motto
+ Wisdom, Faith, Innovation.</desc>
+ <defs>
+  <linearGradient id="whm-gold" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e6c884"/><stop offset=".5" stop-color="#cba45a"/><stop offset="1" stop-color="#a8823c"/>
+  </linearGradient>
+  <linearGradient id="whm-silver" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f2f3f5"/><stop offset=".45" stop-color="#c3c7cf"/><stop offset="1" stop-color="#8b8f99"/>
+  </linearGradient>
+  <linearGradient id="whm-leaf" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#5c8f4a"/><stop offset="1" stop-color="#375f34"/>
+  </linearGradient>
+  <linearGradient id="whm-gloss" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".17"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="whm-shield-dark" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#272118"/><stop offset="1" stop-color="#15120f"/>
+  </linearGradient>
+  <linearGradient id="whm-cream" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f7f2e8"/><stop offset="1" stop-color="#e0d6c1"/>
+  </linearGradient>
+  <clipPath id="whm-clip"><path d="M96,168 H304 V266 C304,330 263,374 200,400 C137,374 96,330 96,266 Z"/></clipPath>
+ </defs>
+
+ <!-- rooster -->
+ <g transform="translate(198,152)">
+  <g stroke="url(#whm-gold)" stroke-width="4.2" stroke-linecap="round" fill="none">
+   <path d="M-3,-14 L-6,4"/><path d="M13,-14 L16,4"/>
+   <path d="M-6,4 L-16,9 M-6,4 L0,10 M16,4 L10,10 M16,4 L26,9"/>
+  </g>
+  <path fill="url(#whm-gold)" d="M-18,-32 C-40,-52 -58,-80 -58,-114 C-51,-106 -46,-99 -42,-92
+    C-43,-101 -41,-108 -36,-113 C-32,-104 -29,-96 -25,-90 C-25,-98 -23,-104 -19,-108
+    C-17,-96 -13,-83 -9,-72 C-5,-57 -1,-43 3,-30 Z"/>
+  <path fill="url(#whm-gold)" d="M28,-104 C30,-113 35,-111 36,-104 C39,-113 44,-111 45,-104 C49,-112 54,-108 52,-99
+    C56,-95 58,-90 58,-86 L74,-81 L57,-77 C56,-71 52,-67 47,-65 C42,-58 39,-50 40,-43
+    C50,-36 53,-23 45,-15 C38,-9 26,-8 14,-10 C0,-12 -14,-18 -22,-30
+    C-26,-44 -24,-60 -16,-72 C-8,-84 2,-90 4,-88 C10,-93 14,-99 28,-104 Z"/>
+  <path fill="#b5342a" d="M28,-104 C30,-113 35,-111 36,-104 C39,-113 44,-111 45,-104 C49,-112 54,-108 52,-99 C44,-102 34,-103 28,-104 Z"/>
+  <path fill="#b5342a" d="M52,-74 C58,-72 59,-63 52,-61 C47,-60 45,-66 47,-71 Z"/>
+  <circle cx="44" cy="-92" r="2.6" fill="#15120f"/>
+ </g>
+ <rect x="152" y="160" width="96" height="7" rx="3.5" fill="url(#whm-gold)"/>
+
+ <!-- shield -->
+ <g clip-path="url(#whm-clip)">
+  <rect x="88" y="160" width="224" height="256" fill="url(#whm-shield-dark)"/>
+  <path d="M96,312 L200,250 L304,312 V410 H96 Z" fill="url(#whm-cream)"/>
+  <path d="M200,236 L312,302 L304,318 L200,254 L96,318 L88,302 Z" fill="url(#whm-silver)"/>
+  <g fill="url(#whm-gold)"><rect x="192" y="186" width="16" height="56" rx="2"/><rect x="172" y="205" width="56" height="16" rx="2"/></g>
+  <g transform="translate(200,368)">
+   <path d="M-2,0 V-30 M-2,-19 L-13,-28 M-2,-17 L9,-27" stroke="#4a3a26" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+   <g fill="#3f6b3a"><circle cx="-2" cy="-42" r="18"/><circle cx="-21" cy="-32" r="13"/><circle cx="17" cy="-32" r="13.5"/>
+    <circle cx="-11" cy="-55" r="12"/><circle cx="9" cy="-54" r="11.5"/></g>
+   <g fill="#517f47" opacity=".8"><circle cx="-8" cy="-45" r="9"/><circle cx="6" cy="-39" r="7"/></g>
+  </g>
+ </g>
+ <path d="M96,168 H304 V266 C304,330 263,374 200,400 C137,374 96,330 96,266 Z" fill="none" stroke="url(#whm-silver)" stroke-width="6"/>
+
+  <!-- polished sweep across the shield + three glints -->
+  <g clip-path="url(#whm-clip)">
+    <path d="M96,168 L188,168 L120,410 L96,410 Z" fill="url(#whm-gloss)"/>
+  </g>
+
+  <g fill="url(#whm-leaf)" opacity=".92">
+    <g transform="translate(304,308) rotate(32) scale(1.5)"><path d="M0,15 C-6,10 -11,0 -11,-9 C-11,-19 -6,-26 0,-29 C6,-26 11,-19 11,-9 C11,0 6,10 0,15 Z"/></g>
+    <g transform="translate(338,364) rotate(-44) scale(1.1)"><path d="M0,15 C-6,10 -11,0 -11,-9 C-11,-19 -6,-26 0,-29 C6,-26 11,-19 11,-9 C11,0 6,10 0,15 Z"/></g>
+    <g transform="translate(92,332) rotate(-28) scale(1.34)"><path d="M0,15 C-6,10 -11,0 -11,-9 C-11,-19 -6,-26 0,-29 C6,-26 11,-19 11,-9 C11,0 6,10 0,15 Z"/></g>
+    <g transform="translate(62,388) rotate(52) scale(.98)"><path d="M0,15 C-6,10 -11,0 -11,-9 C-11,-19 -6,-26 0,-29 C6,-26 11,-19 11,-9 C11,0 6,10 0,15 Z"/></g>
+  </g>
+ <g font-family="Georgia,serif" font-size="31" font-weight="700" fill="url(#whm-silver)" text-anchor="middle">
+  <text x="58" y="290">W</text><text x="342" y="290">H</text>
+ </g>
+</svg>
