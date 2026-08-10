@@ -18,7 +18,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%9D%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" /></noscript>
 <style>
   :root{
     --bg:#14110e;--bg2:#1b1712;--surface:#221d17;--line:#39312780;--line-s:#3b3226;
@@ -129,9 +131,9 @@
       </picture>
       <span class="eyebrow">New Bern, North Carolina</span>
       <h1>David Worthington Hahn</h1>
-      <div class="tag">From the bottom to a mission — one honest day at a time.</div>
-      <p class="lead">A faith-driven builder, a father to the forgotten, and a man who was given his life back — now spending it building companies that give it away.</p>
-      <p style="font-style:italic;opacity:.85;margin:.2rem 0 1.4rem">&ldquo;No fate but what we make&rdquo; — grace gave me the chance; what I build with it is up to me.</p>
+      <div class="tag">A servant of the Most High — one honest day at a time.</div>
+      <p class="lead">A man who was given his life back, now spending it building things meant to be given away. Whatever good comes of any of it belongs to God, not to me.</p>
+      <p style="font-style:italic;opacity:.85;margin:.2rem 0 1.4rem">&ldquo;Unless the L<span style="font-variant:small-caps">ord</span> builds the house, they labor in vain who build it.&rdquo; — Psalm 127:1</p>
       <div class="cta-row">
         <a class="btn btn-gold" href="#connect">Let's connect →</a>
         <a class="btn btn-ghost" href="https://hahntechcorp.com/founder/">My story</a>
@@ -144,7 +146,7 @@
     <div class="wrap prose">
       <div class="sec-head"><span class="eyebrow">Who I Am</span></div>
       <p>I'm not the man I used to be — and that's the whole point. Addiction and prison took years from me; a coma nearly took the rest. But by a grace I didn't earn, I made it home. I learned to read after I was baptized, earned my first A's in a cell, and walked out to a friend waiting at the gate. I never forget the lean years — oatmeal is better than no meal, and plenty of days that was the meal.</p>
-      <p>Today I build — a whole family of companies out of New Bern — but not to chase money. I build so I have something to <em>give</em>. Every venture is a way to turn a second chance into second chances for other people. Keep reading and I'll show you what that looks like.</p>
+      <p>Today I build — a whole family of companies out of New Bern — but not to chase money, and not to make a name. I build so I have something to <em>give</em>. Every venture is a way to turn a second chance into second chances for other people. None of it is mine to take credit for; I'm just the one holding the tools. Keep reading and I'll show you what that looks like.</p>
       <p class="pull">"If God can restore a man like me, He can restore anyone. That's not marketing. That's my life."</p>
       <p style="text-align:center"><a href="https://hahntechcorp.com/founder/">Read the full testimony →</a> &nbsp;·&nbsp; <a href="https://hahntechcorp.com/story/">Where I come from →</a></p>
     </div>
@@ -188,8 +190,8 @@
 
   <section>
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">What I'm Building</span><h2>The Hahn family of companies</h2>
-        <p>One family, many ventures, one mission — built honestly, to give back.</p></div>
+      <div class="sec-head"><span class="eyebrow">What God Is Building</span><h2>The Hahn family of companies</h2>
+        <p>One family, many ventures, one mission — built honestly, to give back. He gets the credit; we just show up and do the work.</p></div>
       <div class="ventures">
         <a class="vcard" href="https://hahntechcorp.com" target="_blank" rel="noopener"><b>Hahn Technologies Corp</b><span>The hub — business, tax, web &amp; AI help</span><span class="go">Visit →</span></a>
         <a class="vcard" href="https://koalateakratom.com" target="_blank" rel="noopener"><b>Koala Tea Kratom</b><span>Premium, lab-tested botanicals</span><span class="go">Visit →</span></a>
@@ -280,6 +282,9 @@
 
   <!-- Sticky contact pill — free bottom-right corner (audio player sits bottom-left) -->
   <style>
+    /* Both pills are position:fixed, so reserve room or they sit on top of the
+       last line of the footer (the Privacy Policy link). Pill height 56px + 16px offset. */
+    body{padding-bottom:104px}
     .contact-pill{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;align-items:center;gap:8px;background:rgba(34,29,23,.94);backdrop-filter:blur(8px);border:1px solid var(--line-s);border-radius:999px;padding:7px 8px 7px 16px;box-shadow:0 12px 32px rgba(0,0,0,.55)}
     .contact-pill .cp-label{font-family:var(--inter);font-weight:700;font-size:.82rem;color:var(--ink);letter-spacing:.01em}
     .contact-pill a{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:40px;border-radius:999px;font-family:var(--inter);font-weight:700;font-size:.9rem;transition:filter .15s}
